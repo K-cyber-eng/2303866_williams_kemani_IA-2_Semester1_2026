@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Conf- Ticket</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="js/ticket.js" defer></script>
+  </head>
+  <body>
+
+    <main class="ticket-page">
+      <header class="header 3">
+        <img src="Assets/Images/logo-full.svg" alt="Coding Conf Logo" class="logo">
+      </header>
+
+      <section class="confirmation">
+        <h1>Congratulations, <span id= "heading-name">Attendee</span>!<br> Your ticket is ready.</h1>
+        <p>We've emailed your ticket to <span id="attendee-email">email address</span> and will send updates in the run up to the event.</p>
+      </section>
+
+      <section class="ticket-card">
+
+        <div class="ticket-logo">
+          <img src="Assets/Images/logo-full.svg" alt="Coding Conf logo" class="ticket-logo">
+        <div>  
+          <p class="event-details">
+            Oct 26, 2026 <span>/</span> Papine, Kingston.
+          </p>
+        </div>  
+        </div>
+        
+        <div class="attendees">
+          <img id="profile-picture" src="Assets/Images/avatar.jpg" alt="Attendees Profile Picture" class="profile-picture">
+
+          <div class="attendees-info">
+            <h3 id="ticket-name"> Attendees Name</h3>
+
+            <a id="github-link" href="https://github.com/">
+                <img src="Assets/Images/icon-github.svg" alt="GitHub" class="github-icon">
+
+                <span id="github-username">@githubusername</span>
+            </a>
+          </div>
+        </div>
+
+        <aside class="ticket-number">
+          <span id="ticket-serial">#01609</span>
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Conf Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="js/validation.js"></script>
+  </head>
+  <body>
+    <div class=" container">
+      <header>
+        <img src="Assets/Images/logo-full.svg" alt="Coding Conf Logo" class="logo" /> 
+      </header>
+      <h1>Your Journey to Coding Conf 2026 Starts Here!</h1>
+      <p class="subtitle">Secure your spot as next year's biggest coding conference. </p>
+
+      <form id="Registration">
+        <label for="avatar">Upload Avatar</label>
+
+        <div class="upload-box">
+          <input type="file" id="avatar" accept="image/png, image/jpg, image/jpeg">
+          <img src="Assets/Images/icon-upload.svg" alt="Upload Icon" class="upload-icon">
+
+          <p>Click to upload or Drag and Drop</p>
+        </div>
+        
+        <small>Upload your photo (JPG or PNG, max size: 500kb)</small>
+
+        <label for="name">Full Name</label>
+        <input type="text" id="fullname" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id= "email" placeholder="example@email.com" required>
+
+        <label for="username">GitHub Username</label>
+        <input type="text" id= "username" placeholder="@yourusername" required> </input>
+
+        <button type="submit">Generate My Ticket</button>
+
+        <p id="message"></p>
+
+      </form>
+
+      </p>
+    </div>
+  </body>
+</html>

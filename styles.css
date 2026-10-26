@@ -1,0 +1,696 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: inconsolata, monospace;
+    color: black;
+    background-color: white;
+    line-height: 1.6;
+}
+
+section{
+    scroll-margin-top: 30px;
+}
+
+h2{ 
+    font-size: 20px;
+    margin-bottom: 25px;
+    color: black;
+}
+
+/*Navigation*/
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    color: black;
+    background-color: darkblue;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/*Coding Conf Logo*/
+
+.logo{
+    width: 150px;
+    height: auto;
+    display: block;
+    color: black
+    
+    
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: darkblue;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: yellow;
+}
+
+/*Welcome*/
+
+.welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 70px 10%;
+    color: white;
+    background-color: darkblue;
+}
+
+.welcome-content{
+    max-width: 800px;
+    width: 100%;
+}
+
+.welcome-content >p{
+    font-size: 20px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: white;
+}
+
+welcome h1{
+    font-size: 20px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.description{
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/*About*/
+
+.about{
+    padding: 60px;
+    text-align: center;
+    background-color: white;
+}
+
+.about h2{
+    margin-bottom: 20px;
+}
+
+.about p{
+    max-width: 850px;
+    margin: 0 auto;
+    color: #374151;
+    font-size: 17px;
+}
+
+
+.speakers {
+    padding: 60px 7%;
+    text-align: center;
+    background-color: #f9fafb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.speakers h2{
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.speaker{
+    width: 300px;
+    background-color: white;
+    border-radius: 11px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.speaker img{
+    display: block;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 3px solid #e5e7eb;
+    margin: 20px auto 10px;
+}
+
+speaker h3{
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.speaker p{
+    color: black;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.speaker:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.14);
+    background-color: white;
+}
+
+.speaker:hover h3{
+    color: blue;
+}
+
+.schedule{
+    padding: 60px 8%;
+    text-align: center;
+    background-color: darkblue;
+}
+
+.schedule h2{
+    margin-bottom: 30px;
+    color: white;
+}
+
+.schedule-card{
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    min-height: 180px;
+    padding: 25px 20px;
+    margin: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, o.09);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0.3s ease;
+    background-color: 0.3s ease;
+}
+
+.schedule-card h3{
+    font-size: 20px;
+    color: blue;
+    margin-bottom: 12px;
+    transition: color 0.3s ease;
+}
+
+.schedule-card p, .schedule-card li{
+    font-size: 18px;
+    color: black;
+    line-height: 1.7;
+}
+
+.schedule-card ul{
+    list-style: none;
+    padding: 0px;
+}
+
+.schedule-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+    background-color: white;
+}
+
+.schedule-card:hover h3{
+    color: blue;
+}
+
+
+.register{
+    padding: 50px 8%;
+    text-align: center;
+    background-color: white;
+}
+
+.register p{
+    max-width: 750px;
+    margin: 0 auto 20px;
+    font-size: 20px;
+    line-height: 1.6;
+    color: black;
+    font-weight: 400;
+}
+
+.register-button{
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: rgb(245, 245, 7);
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, 
+    transform 0.3s ease, box-shadow 0.3 ease;
+}
+
+.register-button:hover{
+    background-color: #fbbf24;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 600px) {
+
+    .logo {
+        width: 135px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .welcome h1 {
+        font-size: 28px;
+    }
+
+    .welcome .description {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .speaker img {
+        width: 135px;
+        height: 135px;
+    }
+
+    .register-button {
+        padding: 12px 22px;
+        font-size: 15px;
+    }
+}
+
+/*Registration Form*/
+
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    font-family: "inconsolata", monospace;
+    color: white;
+    background:
+        radial-gradient(ellipse at 75% 65%, #580d99, transparent 45%),
+        linear-gradient(100deg, hsl(248, 70%, 10%));
+    background-attachment: fixed;
+   
+}
+
+.container{
+    width: 98%;
+    max-width: 600px;
+    margin: auto;
+    padding: 25px 0 50px;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 50px
+}
+
+.logo{
+    display: block;
+    width: 200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 38px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.subtitle{
+    text-align: center;
+    color: #d0c9df;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 45px;
+}
+
+label{
+    display: block;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.upload-box{
+    position: relative;
+    height: 125px;
+    border: 1px dashed #a69ab9;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    text-align: center;
+}
+
+.upload-box input[type="file"]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.upload-icon{
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin: 5px auto;
+    padding: 10px;
+    background: hsl(245, 19%, 35%);
+    border-radius: 10px;
+}
+
+.upload-box p{
+    color: grey;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+small{
+    display: block;
+    margin-top: 10px;
+    color: grey;
+    font-size: 10px;
+    text-align: center;
+}
+
+input[type="text"], input[type="email"]{
+    width:100%;
+    padding:16px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid hsl(245, 15%, 58%);
+    border-radius: 12px;
+    color: white;
+    font-size: 15px;
+    font-family: inconsolata, monospace;
+    outline: none;
+}
+
+input[type="text"]:focus, input[type="email"]:focus{
+    border-color: coral;
+}
+
+button { 
+    display: block;
+    width: 100%;
+     padding: 17px; 
+     margin: 25px auto 0; 
+     border: none; 
+     border-radius: 12px;
+      background: #fa7668; 
+      color: #170b25; 
+      font-size: 16px; 
+      font-weight: 700; 
+      font-family: "Inconsolata", monospace; 
+      cursor: pointer; 
+    } 
+
+      button:hover { 
+        background: #ff9385; 
+    }
+
+    /*Mobile Screen Resolution*/
+    @media screeen and (max-width: 600px){
+        .container{
+            width: 90%;
+            padding-top: 15px;
+        }
+
+        header{
+            margin-bottom: 35px;
+        }
+
+        .logo{
+            width: 180px;
+        }
+
+        h1{
+            font-size: 27px;
+        }
+
+        .subtitle{
+            font-size: 14px;
+            margin-bottom: 35px;
+        }
+
+        .upload-box{
+            height: 125px;
+        }
+    }
+
+/*Ticket Css*/
+
+body{
+    background-color: hsl(248, 70%, 10%);
+     background-image: url("Assets/Images/pattern-squiggly-line-bottom-desktop.svg"),
+     url("Assets/Images/pattern-squiggly-line-top.svg"), url("Assets/Images/pattern-lines.svg");
+    background-repeat: no-repeat;
+    background-position: 
+        center, top right, bottom left;
+    background-size: cover, 30%, 50%;
+    min-height: 100vh;
+    padding: 30px 20px;
+    color: white
+}
+
+.ticket-page{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 50px
+}
+
+.header span{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.ticket-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ticket-logo img{
+    transform: scale(3.5);
+    transform-origin: left;
+}
+
+.confirmation{
+    font-size: 20px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.confirmation h1{
+    font-size: 38px;
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+
+#heading-name{
+    background: linear-gradient(to right, coral, white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.confirmation p{
+    font-size: 18px;
+    line-height: 1.6;
+    color: hsl(252, 6%, 83%);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#attendees email{
+    color: coral;
+}
+
+.ticket-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 600px;
+    width: 100%;
+    min-height: 280px;
+    margin: 0 auto;
+    padding: 50px;
+    background-image: url("Assets/Images/pattern-ticket.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    border-radius: 12px;
+
+    overflow: hidden;
+}
+
+.ticket-logo{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.ticket-logo img{
+    width: 40px;
+    height: 40px;
+}
+
+.event-details{
+    font-size: 15px;
+    color: hsl(252, 6%, 83%);
+}
+
+.event-details span{
+    margin: 0 8px;
+}
+
+.attendees{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px
+}
+
+.profile-picture{
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.attendees-info h3 {
+     font-size: 22px; 
+     margin-bottom: 8px; 
+     overflow-wrap: anywhere; 
+} 
+.attendees-info a{
+     display: flex;
+      align-items: center;
+       gap: 8px; 
+       color: #d6d3e5; 
+       text-decoration: none; 
+       font-size: 15px; 
+       overflow-wrap: anywhere;
+} 
+
+.github-icon { 
+    width: 18px; 
+    height: 18px;
+ } 
+
+.ticket-number {
+     position: absolute; 
+     top: 50%; 
+     right: 20px; 
+     transform: translateY(-50%); 
+     writing-mode: vertical-rl; 
+     color: #b8b4ca; 
+     font-size: 18px; 
+     letter-spacing: 2px; 
+     padding-left: 15px;
+    border-left: 2px dashed #b8b4ca;
+    height: 80%; 
+    display: flex; 
+    justify-content: center; 
+}
+
+@media screen and (max-width: 600px) { 
+    body { padding: 25px 15px;
+         background-size: 100%;
+         } 
+    .header { 
+        margin-bottom: 40px; 
+    } 
+
+    .header span { 
+        font-size: 20px; 
+    } 
+
+    .confirmation { 
+        margin-bottom: 35px;
+     }
+
+    .confirmation h1 {
+         font-size: 28px;
+    }
+    
+    .confirmation p {
+         font-size: 16px;
+    }
+
+    .ticket-card {
+        min-height: 230px;
+        padding: 18px;
+    }
+
+    .ticket-logo h2{
+        font-size: 13px;
+    }
+
+    .event-details{
+        font-size: 13px;
+    }
+
+    .profile-picture{
+        width: 50px;
+        height: 50px;
+    }
+
+    .attendees-info h3{
+        font-size: 18px;
+    }
+
+    .ticket-number{
+        right: 10px;
+        font-size: 14px
+    }
+
+
+
+
+
+}
